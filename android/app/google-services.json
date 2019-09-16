@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "287355816351",
+    "firebase_url": "https://rgb-everything.firebaseio.com",
+    "project_id": "rgb-everything",
+    "storage_bucket": "rgb-everything.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287355816351:android:cb3d599a1d3f8f66",
+        "android_client_info": {
+          "package_name": "ca.gustavo.rgbeverything"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287355816351-5lnqcu5hdpv7tf0llkb1n248rd0tthol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBIGeAAth_KjpLItrK4Tq1Y9c9P5a9bK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287355816351-5lnqcu5hdpv7tf0llkb1n248rd0tthol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RGB everything</string>
+    <string name="brightness">Brightness</string>
+    <string name="color">Color</string>
+    <string name="apply">Apply</string>
+    <string name="_0">0</string>
+    <string name="ffffff">#FFFFFF</string>
+    <string name="cancel">Cancel</string>
+    <string name="pick">Pick</string>
+    <string name="choose_color_dialog_title">Pick Color</string>
+    <string name="light_off">OFF</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_mismatch_error">Passwords do not match</string>
+    <string name="add_a_new_light">Add a new light</string>
+    <string name="new_light_id">New light ID</string>
+    <string name="add">Add</string>
+    <string name="new_light_name">New light name</string>
+    <string name="add_light_invalid_input">Invalid Input</string>
+    <string name="error_login_failed">Login Failed</string>
+</resources>
