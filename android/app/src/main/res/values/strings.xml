@@ -22,4 +22,7 @@
     <string name="new_light_name">New light name</string>
     <string name="add_light_invalid_input">Invalid Input</string>
     <string name="error_login_failed">Login Failed</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="toggle_light">Toggle Light</string>
+    <string name="my_lights">My Lights:</string>
 </resources>

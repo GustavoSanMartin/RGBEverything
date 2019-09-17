@@ -4,44 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="18dp"
     tools:context=".CreateAccountActivity">
 
     <TextView
-        android:id="@+id/create_account_title"
+        android:id="@+id/my_lights_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:text="@string/create_an_account"
-        android:textSize="36sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:textSize="42sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/email_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:labelFor="@id/input_email"
         android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/create_account_title" />
+        app:layout_constraintTop_toBottomOf="@id/my_lights_title" />
 
     <EditText
         android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:autofillHints="Email"
         android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintTop_toBottomOf="@id/email_label"
-        tools:targetApi="o" />
+        tools:targetApi="o"
+        tools:text="username@example.com" />
 
     <TextView
         android:id="@+id/password_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:labelFor="@id/input_password"
         android:text="@string/password"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_email" />
 
@@ -49,18 +55,22 @@
         android:id="@+id/input_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintTop_toBottomOf="@id/password_label"
         tools:targetApi="o"
-        android:importantForAutofill="no" />
+        tools:text="sdfsefw43tr" />
 
     <TextView
         android:id="@+id/confirm_password_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:labelFor="@id/input_confirm_password"
         android:text="@string/confirm_password"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_password" />
 
@@ -68,15 +78,22 @@
         android:id="@+id/input_confirm_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintTop_toBottomOf="@id/confirm_password_label"
         tools:targetApi="o"
-        android:importantForAutofill="no" />
+        tools:text="sdfsefw43tr" />
 
     <Button
         android:id="@+id/button_sign_in"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create_account"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

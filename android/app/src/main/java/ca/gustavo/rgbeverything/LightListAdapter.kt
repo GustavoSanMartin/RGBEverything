@@ -23,9 +23,12 @@ class LightListAdapter(
     override fun onBindViewHolder(holder: LightViewHolder, position: Int) {
         holder.name.text = list[position].name
         holder.name.setOnClickListener { onClick(list[position].id) }
+
+        holder.id.text = list[position].id
     }
 }
 
 class LightViewHolder(item: View) : RecyclerView.ViewHolder(item) {
     val name: TextView = item.findViewById(R.id.light_name)
+    val id: TextView = item.findViewById(R.id.light_id)
 }

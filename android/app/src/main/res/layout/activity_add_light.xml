@@ -11,53 +11,65 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="36sp"
+        android:layout_marginTop="36dp"
         android:text="@string/add_a_new_light"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/light_id_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/new_light_id"
+        android:layout_marginTop="36dp"
         android:labelFor="@id/light_id_input"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="@string/new_light_id"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
     <EditText
         android:id="@+id/light_id_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/light_id_label"
-        app:layout_constraintStart_toStartOf="parent"
         android:importantForAutofill="no"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_id_label"
+        tools:text="GSDH234" />
 
     <TextView
         android:id="@+id/light_name_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/new_light_name"
         android:labelFor="@id/light_name_input"
-        app:layout_constraintTop_toBottomOf="@id/light_id_input"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="@string/new_light_name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_id_input" />
 
     <EditText
         android:id="@+id/light_name_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/light_name_label"
-        app:layout_constraintStart_toStartOf="parent"
         android:importantForAutofill="no"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_name_label"
+        tools:text="Living Room"/>
 
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        style="@style/Widget.MaterialComponents.Button"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

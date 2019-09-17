@@ -11,11 +11,12 @@
         android:id="@+id/light_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Light"
-        android:textSize="42sp"
         android:layout_marginTop="48dp"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Light Name" />
 
     <com.triggertrap.seekarc.SeekArc
         android:id="@+id/seekArc"
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_0"
         android:textSize="40sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintBottom_toTopOf="@id/color"
         app:layout_constraintEnd_toEndOf="@id/seekArc"
         app:layout_constraintStart_toStartOf="@id/seekArc"
@@ -47,6 +49,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ffffff"
         android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
         app:layout_constraintBottom_toBottomOf="@id/seekArc"
         app:layout_constraintEnd_toEndOf="@id/seekArc"
         app:layout_constraintStart_toStartOf="@id/seekArc"
